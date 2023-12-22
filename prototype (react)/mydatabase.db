@@ -1,0 +1,22 @@
+-- User Details Table
+CREATE TABLE IF NOT EXISTS User (
+    userId INTEGER PRIMARY KEY,
+    username TEXT NOT NULL,
+    firstName TEXT,
+    lastName TEXT,
+    email TEXT,
+    hashedPassword TEXT
+);
+
+-- Stock Inventory Table
+CREATE TABLE IF NOT EXISTS Inventory (
+    itemId INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    upc TEXT,
+    quantity INTEGER,
+    expiry DATE,
+    dateAdded DATE,
+    datePurchase DATE,
+    wholesalePrice REAL,
+    retailPrice REAL
+);
