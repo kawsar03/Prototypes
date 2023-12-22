@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css"/>
+  </head>
+  <body>
+    <form class="add" method="POST" action="/stockAdded">
+      <p>Name: <input id="name" type="text" name="name" value="" required /></p>
+      <p>UPC: <input id="upc" type="text" name="upc" value="" /></p>
+      <p>Quantity: <input id="quantity" type="number" name="quantity" value="" required /></p>
+      <p>Expiry Date: <input id="expiry" type="date" name="expiry" value="" /></p>
+      <p>Date Added: <input id="dateAdded" type="date" name="dateAdded" value="" /></p>
+      <p>Date Purchase: <input id="datePurchase" type="date" name="datePurchase" value="" /></p>
+      <p>Wholesale Price: <input id="wholesalePrice" type="number" step="0.01" name="wholesalePrice" value="" required /></p>
+      <p>Retail Price: <input id="retailPrice" type="number" step="0.01" name="retailPrice" value="" required /></p>
+      <input type="submit" value="Add Stock" />
+    </form>
+  </body>
+</html>
+
